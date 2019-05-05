@@ -1,0 +1,26 @@
+.header {
+    align-items: center;
+    padding: 5px;
+    background-color: aquamarine;
+    height:5em;
+    border-radius: 12px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.text{
+    color: cornsilk;
+    font-size: 20px;
+}
+.con{
+    margin-top: 10px;
+    width: 80%;
+}
+.color-link{
+    color: tomato;
+}
+.search-container{
+    float: none;
+    width: 100%;
+    padding: 15px;
+    float: none;
+}
