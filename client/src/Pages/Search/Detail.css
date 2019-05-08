@@ -1,0 +1,38 @@
+.left{
+    width: 30%;
+}
+.right{
+    width: 70%;
+}
+img{
+    width: 180px;
+    height: 200px;
+}
+.con{
+    margin-top: 10px;
+    width: 80%;
+}
+.text1{
+    font-size: 30px;
+    color: blueviolet;
+}
+.text-link{
+    font-size: 25px;
+}
+.padd{
+    padding-top: 20px;
+}
+.content-text{
+    font-weight: bold;
+}
+.con{
+    margin-top: 40px;
+}
+.he{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+}
+.l{
+    width: 20%;
+}
