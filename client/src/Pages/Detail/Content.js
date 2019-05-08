@@ -3,11 +3,11 @@ import "./Content.css";
 class Content extends Component {
     render() {
         return (
-            <div class="container he">
-                <table class="table table-hover">
+            <div>
+                <table>
                     <thead>
                         <tr>
-                            <th className="left text1">Mô tả nội dung</th>
+                            <th className="text1">Mô tả nội dung</th>
                         </tr>   
                     </thead>
                     <tbody>

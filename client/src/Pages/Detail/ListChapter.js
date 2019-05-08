@@ -1,62 +1,52 @@
 import React, { Component } from 'react';
-import "./ListChapter.css";
+import ChapterCell from './ChapterCell';
+
 class ListChapter extends Component {
     render() {
         return (
-            <div class="container he">
-                <table class="table table-hover">
+            <div>
+                <table>
                     <thead>
-                        <tr>
-                            <th className="left text1">Danh sách các Chapters của truyện</th>
-                        </tr>   
+                            <th className="text1">Danh sách các Chapters của truyện</th>
                     </thead>
-                    <tbody>
+                    <tbody style={{fontSize: "18px"}}>
                         <tr>
-                            <td className="text2">
-                                <a href="#"> Vô Cực-5</a>
-                                <span className="fl">17/04/2019</span>
+                            <td>
+                                <ChapterCell name="Vô Cực-5" date="19/04/2019"/>
                             </td>
                         </tr>
                         <tr>
-                            <td className="text2">
-                                <a href="#"> Vô Cực-4</a>
-                                <span className="fl">11/04/2019</span>
+                            <td>
+                                <ChapterCell name="Vô Cực-4" date="11/04/2019"/>
                             </td>
                         </tr>
                         <tr>
-                            <td className="text2">
-                                <a href="#"> Vô Cực-3</a>
-                                <span className="fl">05/04/2019</span>
+                            <td>
+                                <ChapterCell name="Vô Cực-3" date="05/04/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Vô Cực-2</a>
-                                <span className="fl">28/03/2019</span>
+                            <td>
+                                <ChapterCell name="Vô Cực-2" date="28/03/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Vô Cực-1</a>
-                                <span className="fl">22/03/2019</span>
+                            <td>
+                                <ChapterCell name="Vô Cực-1" date="22/03/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Đến Ánh Quang-2</a>
-                                <span className="fl">16/03/2019</span>
+                            <td>
+                                <ChapterCell name="Đến Ánh Quang-2" date="16/03/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Đến Ánh Quang-1</a>
-                                <span className="fl">10/03/2019</span>
+                            <td>
+                                <ChapterCell name="Đến Ánh Quang-1" date="10/03/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Đến Tận Cùng-2</a>
-                                <span className="fl">04/03/2019</span>
+                            <td>
+                                <ChapterCell name="Đến Tận Cùng-2" date="04/03/2019"/>
                             </td>
                         </tr>                        <tr>
-                            <td className="text2">
-                                <a href="#"> Đến Tận Cùng-1</a>
-                                <span className="fl">27/02/2019</span>
+                            <td>
+                                <ChapterCell name="Đến Tận Cùng-1" date="27/02/2019"/>
                             </td>
                         </tr>
                     </tbody>

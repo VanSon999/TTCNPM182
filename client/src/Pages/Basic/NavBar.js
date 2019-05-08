@@ -6,7 +6,7 @@ const navbar = () => {
         <div className='brand-logo'>
           <ul className='right'>
             <li><b>Comic VN</b></li>
-            <li><img src={"logo.png"} alt="logo" width = "65px" height = "65px"/></li>
+            <li><img src={"logo.png"} alt="logo" height = "63px"/></li>
           </ul>
           </div>
           <ul className='right'>

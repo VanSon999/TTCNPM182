@@ -6,7 +6,7 @@ import Storyboard from './StoryBoard/Storybroad.js';
 const storyboardpage = () => {
     return (
         <div>
-        <div className="container">
+        <div className="container" style={{width:"80%"}}>
             <NavBar />
                 <Storyboard />
         </div>

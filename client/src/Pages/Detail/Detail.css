@@ -1,25 +1,9 @@
-.left{
-    width: 30%;
-}
-.right{
-    width: 70%;
-}
-img{
-    width: 300px;
-}
-.con{
-    margin-top: 20px;
-    width: 80%;
-}
 .text1{
     font-size: 30px;
     color: blueviolet;
+    font-weight: bold;
 }
-.he{
-    width: 95%;
-    margin-left: 2.5%;
-    margin-top: 20px;
-}
-.l{
-    width: 30%;
+
+#comicPic {
+	max-width:300px;
 }

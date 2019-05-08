@@ -3,7 +3,7 @@ class Comment extends Component {
     render() {
         return (
             <div class="container con">
-                <table class="table table-hover">
+                <table class="">
                     <thead>
                         <tr>
                             <th className="left text1">Bình luận và Nhận xét</th>

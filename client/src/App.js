@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-ro
 import Homepage from './Pages/Homepage';
 import Storyboard from './Pages/Storyboardpage';
 import Dashboard from './Pages/Dashboard/Dashboard';
-// import Detail from './Pages/Detail';
+import Detail from './Pages/Detail';
 // import Search from './Pages/Searchpage';
 import Signin from './Pages/Signinpage';
 import Signup from './Pages/Signuppage';
@@ -17,7 +17,7 @@ class App extends Component {
             <Route exact path="/home" component={Homepage}/>
             <Route exact path="/storyboard" component={Storyboard} />
             <Route exact path="/dashboard" component={Dashboard}/>
-            {/* <Route exact path="/detail" component={Detail} /> */}
+            <Route exact path="/detail" component={Detail} />
             {/* <Route exact path="/search" component={Search} /> */}
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />

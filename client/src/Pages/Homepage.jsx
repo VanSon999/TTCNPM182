@@ -8,7 +8,7 @@ import Footer from './Basic/Footer.js';
 const homepage = () => {
     return (
       <div>
-      <div className='container'>
+      <div className='container' style={{width:"80%"}}>
         <NavBar />
         <span className="tit">Top Comics</span>
         <div className="row">
