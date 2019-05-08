@@ -1,14 +1,17 @@
 import React from 'react';
+import './NavBar.css';
 
 const navbar = () => {
     return (
     <nav className='grey darken-3'>
-        <div className='brand-logo'>
-          <ul className='right'>
+    <div className="row">
+        <div className="col s5">
+          <ul className='left brand-logo'>
             <li><b>Comic VN</b></li>
-            {/* <li><img src={"logo.png"} alt="logo" width = "65px" height = "65px"/></li> */}
+            <li><img src={"logo.png"} alt="logo" style={{width:"auto", height:"65px"}} /></li>
           </ul>
           </div>
+        <div className="col s7">
           <ul className='right'>
             <li><a href='#'>Login</a></li>
             <li>
@@ -17,6 +20,8 @@ const navbar = () => {
             </form>
             </li>
           </ul>
+        </div>
+          </div>
      </nav>);
 }
 export default navbar;
