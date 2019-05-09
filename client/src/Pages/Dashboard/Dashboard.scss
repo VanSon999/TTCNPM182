@@ -17,27 +17,38 @@
             -o-transition: border-color .5s ease;
             -webkit-transition: border-color .5s ease;
             transition: border-color .5s ease;
-            border-right: 3px solid #424242;
+            border-left: 3px solid #1565c0;
+            
         }
 
         :hover {
-            border-right: 3px solid #eeeeee;
+            border-left: 3px solid #90caf9;
         }
     }
 
     .indicator {
         display: none;
     }
+
+    .waves-effect.waves-pik .waves-ripple {
+         background-color: rgba(252, 238, 239, 1);
+       }
 }
 
-.tits {
-    font-size: 20px;
-}
+// // .tits {
+//     font-size: 20px;
+// }
 
-.admin-butt {
-    width: 100%;
-}
+// .admin-butt {
+//     width: 100%;
+// }
 
 .col.s12 > .btn {
     width: 110%;
   }
+
+// .center {
+//     margin: auto;
+//     width: 70%;
+//     padding: 10px;
+//   }

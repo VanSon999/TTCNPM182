@@ -7,22 +7,20 @@ import Breadcrumbs from '../Basic/Breadcrumbs'
 
 const dashboard = () => {
     return(
-        
-       
-        <div className="container">
-            <nav style={{background: 'rgb(225, 233, 215)'}}>
+        <div className="container" style={{width:"80%"}}>
+            <nav className="grey darken-3">
                 <div className="nav-wrapper">
                 <ul href="#" className="brand-logo">
-                    <li style={{color:'black'}}><b>Comic VN</b></li>
+                    <li className="white-text"><b>Comic VN</b></li>
                     <li><img src={"logo.png"} alt="logo" width = "60px" height = "60px"/></li>
                 </ul>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                <ul id="nav-mobile" className="right">
                     <li><a className="waves-effect waves-light btn"><i className="material-icons left">person</i>Admin</a></li>
                     <li>
                     <form action="" className="browser-default right">
                     <ul>
-                        <li><input type="search" results="5" autoSave="some_unique_value" name="s" autoComplete="off" aria-label="Search box" placeholder=" Search..."/></li>
-                        <li><i style={{color:'black'}} className="material-icons search-icon">search</i></li>
+                        <li><input type="search" results="5" autoSave="some_unique_value" name="s" autoComplete="off" aria-label="Search box" placeholder=" Search..." className="white-text"/></li>
+                        <li><i className="material-icons search-icon">search</i></li>
                     
                     </ul> 
                     </form>
@@ -30,14 +28,14 @@ const dashboard = () => {
                 </ul>
                 </div>
             </nav>
-            
+            <br />
             <div className="row">
                 <div className="tabs-vertical">
-                    <div className="col s12 m4 l3" style={{background:'rgb(149, 233, 243)',padding:'0'}}>
-                        <ul className="tabs" style ={{height:'700px',backgroundColor:'#fce4ec'}}>
-                            <li className="tab"><a href="#a" className="btn waves-effect waves-light btn-large"><i className="material-icons left">dashboard</i>Dashboard</a></li>
-                            <li className="tab"><a href="#b" className="btn waves-effect waves-light btn-large"><i className="material-icons left">update</i>Add/Update</a></li>
-                            <li className="tab"><a href="#c" className="btn waves-effect waves-light btn-large"><i className="material-icons left">delete</i>Delete</a></li>
+                    <div className="col s12 m4 l3" style={{padding:'0'}}>
+                        <ul className="tabs" style ={{height:'500px'}}>
+                            <li className="tab"><a href="#a" className="btn waves-effect waves-pik btn-flat btn-large white grey-text text-darken-3"><i className="material-icons left" style={{pointerEvents:"none"}}>dashboard</i>Dashboard</a></li>
+                            <li className="tab"><a href="#b" className="btn waves-effect waves-pik btn-flat btn-large white grey-text text-darken-3"><i className="material-icons left" style={{pointerEvents:"none"}}>update</i>Add/Update</a></li>
+                            <li className="tab"><a href="#c" className="btn waves-effect waves-pik btn-flat btn-large white grey-text text-darken-3"><i className="material-icons left" style={{pointerEvents:"none"}}>delete</i>Delete</a></li>
                         </ul>
                     </div>
                     <div className="col s12 m8 l9" style={{padding: '0'}}>
