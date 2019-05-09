@@ -13,9 +13,13 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img id="comicPic" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6250/6250129_sa.jpg;maxHeight=640;maxWidth=550"></img></td>
+                            <td><img id="comicPic" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6250/6250129_sa.jpg" /></td>
                             <td>
-                                <ComicDetail rating="4/5(10 lượt đánh giá)" author="Marvel Comics" artist="Marvel Comics" genre="Comic hành động-Action, Quân sự- Military, Ly kỳ- Thriller, Siêu nhiên- Super Natural, Huyền ảo- Magical" publisher="Chưa rõ" status="Chưa rõ"/>
+                                <ComicDetail rating="4/5(10 lượt đánh giá)" 
+                                             author="Marvel Comics" artist="Marvel Comics" 
+                                             genre="Comic hành động-Action, Quân sự- Military, Ly kỳ- Thriller, Siêu nhiên- Super Natural, Huyền ảo- Magical" p
+                                             ublisher="Chưa rõ" 
+                                             status="Chưa rõ"/>
                             </td>
                         </tr>
                     </tbody>
