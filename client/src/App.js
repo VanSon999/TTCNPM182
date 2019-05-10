@@ -8,6 +8,7 @@ import Detail from './Pages/Detail';
 import Search from './Pages/Searchpage';
 import Signin from './Pages/Signinpage';
 import Signup from './Pages/Signuppage';
+import ReadComic from './Pages/ReadComic';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/search" component={Search} />
             <Route exact path="/signin" component={Signin} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/readcomic" component={ReadComic} />
             <Redirect to="/home" />
           </Switch>
         </Router>
