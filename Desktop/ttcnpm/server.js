@@ -73,13 +73,21 @@ app.post("/adComic", urlencodedParser, function (req, res) {
         company:"khang",
         status:1,
         description:"...",
-        avatar:"logo"
+        avatar:"http://image.phimmoi.net/film/162/poster.medium.jpg"
     })
     .then(()=>{
         res.redirect("/");
     })
     .catch((e)=>console.log(e.message));
 });
+
+app.post("/home",(req,res)=>{
+    Comic.find()
+    .then(comics=>{
+        res.send(comics);
+    })
+});
+
 app.listen(port,()=>{
     console.log("Server is listening on " + port);
 })
