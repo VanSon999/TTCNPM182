@@ -6,9 +6,9 @@ const breadcrumb = () => {
         <nav id="breadcrumbs">
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="#!" class="breadcrumb">First</a>
-            <a href="#!" class="breadcrumb">Second</a>
-            <a href="#!" class="breadcrumb">Third</a>
+            <a href="#!" className="breadcrumb">First</a>
+            <a href="#!" className="breadcrumb">Second</a>
+            <a href="#!" className="breadcrumb">Third</a>
           </div>
         </div>
         </nav>

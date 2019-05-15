@@ -64,7 +64,6 @@ const Comic = mongoose.model("comic",ComicSchema);
 
 app.post("/adComic", urlencodedParser, function (req, res) {
     // create user in req.body
-
     const {comicName,author} = req.body;
     Comic.create({
         comicName,
@@ -86,6 +85,30 @@ app.post("/home",(req,res)=>{
     .then(comics=>{
         res.send(comics);
     })
+});
+
+app.post("/sendComic", urlencodedParser, function (req, res) {
+    // create user in req.body
+    const {comicName} = req.body;
+    Comic.findOne({comicName: comicName})
+    .then(comic=>{
+        res.send(comic);
+    })
+    .catch(e=>console.log(e));
+});
+
+app.post("/searchComic", urlencodedParser, function (req, res) {
+    // create user in req.body
+    const {comicName} = req.body;
+    console.log(comicName)
+    // Comic.find({comicName: comicName})
+    Comic.find({
+        comicName : new RegExp(comicName)
+    })
+    .then(listComic=>{
+        res.send(listComic);
+    })
+    .catch(e=>console.log(e));
 });
 
 app.listen(port,()=>{

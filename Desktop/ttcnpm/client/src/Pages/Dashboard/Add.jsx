@@ -4,6 +4,7 @@ import M from 'materialize-css/dist/js/materialize.min.js'
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 import { PromiseProvider } from 'mongoose';
 import {addComic} from "./Functions";
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 class Add extends Component{
 	constructor(){
@@ -33,17 +34,17 @@ class Add extends Component{
 	render(){
 		return(
 			<form action="/action_page.php" onSubmit={this.onSubmit}>
-			<div class="form-group">
+			<div className="form-group">
 				<label for="email">Tên truyện:</label>
 				<input type="text" class="form-control" id="email" name="comicName" onChange={this.onChange}/>
 			</div>
-			<div class="form-group">
+			<div className="form-group">
 				<label for="email">Tác giả:</label>
 				<input type="text" class="form-control" id="email" name="author" onChange={this.onChange}/>
 			</div>
-			<div class="col-md-12">
+			<div className="col-md-12">
 			<select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
-				<option value="" disabled selected>Thể loại </option>
+				<option value="" disabled selected>Thể loại</option>
 				<option value="1">Action</option>
 				<option value="2">Comedy</option>
 				<option value="3">Tragedy</option>
@@ -51,7 +52,7 @@ class Add extends Component{
 				<option value="5">Horror</option>
 			</select>
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" className="btn btn-primary">Submit</button>
 			</form>
 		)
 	}

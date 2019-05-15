@@ -1,11 +1,12 @@
 import axios from "axios";
 
-export const getComic = () => {
+export const sendComic = (comic) => {
     return axios
-    .post("/home",(comics)=>{
+    .post("/sendComic",{
+        comicName : comic
     })
     .then(res=>{
-        var comics = res.data;
-        return comics;
+        var data = res.data;
+        console.log(data);
     })
 }

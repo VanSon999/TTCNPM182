@@ -7,8 +7,8 @@ class Body extends Component {
     render() {
         return (
             <div>
-                <Detail></Detail>
-                <Content></Content>
+                <Detail comic={this.props.comic}></Detail>
+                <Content comic={this.props.comic}></Content>
                 <ListChapter></ListChapter>
             </div>
         );

@@ -33,7 +33,7 @@ class homepage extends Component{
 				else{
 					var topComics = []
 					for(var i=0;i<4;i++){
-						topComics += comics[i]
+						topComics.push(comics[i]);
 					}
 					this.setState({
 						topComics : topComics,
@@ -60,14 +60,14 @@ class homepage extends Component{
 	showTopComic = () => {
 		if(this.state.topComics.length>0){
 			return this.state.topComics.map((e)=>{
-					return <TopComic comicPic="logo.png" comicName={e.comicName} />
+					return <TopComic comicPic={e.avatar} comicName={e.comicName} _id={e._id} />
 			})
 		}
 	}
 	showListComic = () => {
 		if(this.state.listComics.length>0){
 			return this.state.listComics.map((e)=>{
-					return <RecentUpload comicPic="logo.png" comicDes={e.description} />
+					return <RecentUpload comicPic={e.avatar} comicDes={e.description} />
 			})
 		}
 	}

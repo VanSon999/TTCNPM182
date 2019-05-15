@@ -8,15 +8,15 @@ class Detail extends Component {
                 <table>
                     <thead>
                         <tr>
-                            <th className="text1">Infinity</th>
+                            <th className="text1">{this.props.comic.comicName}</th>
                         </tr>   
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img id="comicPic" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6250/6250129_sa.jpg" /></td>
+                            <td><img id="comicPic" src="logo.png" /></td>
                             <td>
                                 <ComicDetail rating="4/5(10 lượt đánh giá)" 
-                                             author="Marvel Comics" artist="Marvel Comics" 
+                                             author={this.props.comic.author} artist={this.props.comic.artist} 
                                              genre="Comic hành động-Action, Quân sự- Military, Ly kỳ- Thriller, Siêu nhiên- Super Natural, Huyền ảo- Magical" p
                                              ublisher="Chưa rõ" 
                                              status="Chưa rõ"/>
